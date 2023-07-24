@@ -1,0 +1,91 @@
+// Medium
+@include media-md {
+// MENU SECTION
+   // menu burger
+   .menu-btn {
+      visibility: hidden;
+   }
+
+   //menu list
+   .nav {
+      visibility: visible;
+
+      .menu-nav {
+         display: block;
+         height: 100%;
+         background: transparent;
+         text-align: right;
+         transform: translateY(0);
+
+         &__item {
+            display: inline;
+            padding-right: 1.5rem;
+         }
+
+         &__link {
+            font-size: 1.5rem;
+         }
+      }
+   }
+
+// ABOUT SECTION
+   // About header text
+   .about__bio {
+      font-size: 1.5rem;
+   }
+   
+// PROJECT SECTION
+   //header and items
+   .projects {
+      &__bio-image {
+         height: 40vh;
+      }
+
+      &__items {
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .text-secondary {
+         font-size: 3rem;
+      }
+   }
+
+// CONTACT SECTION
+   .contact__list {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+
+// Large
+@include media-lg {
+
+   // PROJECT SECTION
+   //header and items
+   .projects {
+     
+      &__items {
+         grid-template-columns: repeat(3, 1fr);
+      }
+
+      .text-secondary {
+         font-size: 3rem;
+      }
+   }
+
+   .contact__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      font-size: 1.5rem;
+   }
+}
+
+@include media-xl {
+   .projects {
+      &__bio-image {
+         height: 50vh;
+         background-position: center center;
+      }
+   }
+}
