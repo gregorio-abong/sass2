@@ -67,8 +67,9 @@
    }
 
    footer {
+      position: fixed;
       transform: 
       rotate(90deg)
-      translate(-3px, -5px);
+      translate(-10px, -10px);
    }
 }

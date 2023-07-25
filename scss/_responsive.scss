@@ -1,3 +1,25 @@
+// small
+@include media-sm {
+   .home {
+      &__name {
+         font-size: 2.2rem;
+         margin-top: 1rem;
+         padding-bottom: 1.5rem;
+         margin-bottom: 1rem;
+         border-bottom: 2px solid set-text-color($primary-color);
+   
+         &--last {
+            color: $secondary-color;
+            font-weight: 700;
+         }
+      }
+   }
+
+   footer {
+      
+   }
+}
+
 // Medium
 @include media-md {
 // MENU SECTION
